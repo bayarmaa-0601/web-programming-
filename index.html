@@ -1,19 +1,45 @@
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="styleA.css">
+<html lang="en">
 <head>
-	<title>ICSI301 Лаборатори #1</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICSI301 Лаборатори #3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-<body >
-<div class="main">
-<div class="a"> A</div>
-<div class="b"> B</div>
-<div class="c"> C</div>
-<div class="d"> D</div>
-<div class="e"> E</div>
-<div class="f"> F</div>
-</div>
-</div>
+<body>
+   
+    <div class="container">
+         <div class="search">
+                <h3 onclick="">Тэмдэглэлт өдрийг хайх</h3>
+                <input type="text" class="search-input" placeholder="Тэмдэглэлт өдрийг үгээр хайна уу" minlength="3">
+                <div class="search-result"></div>
+            </div>
+        <div class="month">
+            <i class="fas fa-chevron-left" onclick="printPrevMonth()"></i>
+            <h1 class="month-name"></h1>
+            <i class="fas fa-chevron-right" onclick="printNextMonth()"></i>
+        </div>
+        <div class="calendar">
+            <div class="week-day">
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+                <div>Sun</div>
+            </div>
+            <div class="day days"></div>
+        </div>
+        <div class="events">
+            <h3 class="event-header">Тэмдэглэлт өдөр</h3>
+            <div class="listed-events">
+            </div>  
+    </div>
+    <script src="https://kit.fontawesome.com/2cba8f670e.js" crossorigin="anonymous"></script>
+    <script src="calendar.js"></script>
 </body>
 </html>
